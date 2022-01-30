@@ -2,6 +2,7 @@ body {
   font-family: "Montserrat";
   font-size: 2rem;
   text-align: center;
+  background-color: #e23e57;
 }
 
 /* Headings */
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Section */
 
-.colored-section{
+.-section{
   background-color: #e23e57;
   color: #fff;
 }
@@ -36,13 +37,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Title Section */
-#title {
 
+#title {
   text-align: left;
 }
 
 .container-fluid {
-  padding: 5% 15% 5%;
+  padding: 5% 15% 0;
+
 }
 
 @media(max-width: 1230px) {
@@ -53,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(60deg);
     z-index: 1;
     position: relative;
+    margin-top: 150px;
 
   }
   #title {
@@ -87,11 +90,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-image {
-  right: 20%;
-  bottom: 15%;
-  width: 18%;
+  width: 50%;
+  margin-top: 10px;
   transform: rotate(0deg);
-  position: absolute;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+.img{
+  text-align: center;
 }
 
 /* Features */
@@ -134,9 +141,59 @@ p {
 }
 
 .testimonial-image {
-  width: 1280px;
+  width: 100%;
   border-radius: 0%;
   margin: 30px;
+}
+
+.testimonial-carousel{
+  margin: auto;
+}
+
+.carousel-inner{
+  padding-down: 100px;
+}
+
+
+@media(max-width: 1230px){
+  .testimonial-image{
+    width: 300px;
+  }
+  .carousel-control-prev{
+    margin-top: 150px;
+  }
+
+  .carousel-control-next{
+    margin-top: 150px;
+  }
+
+  .carousel-item{
+    width: 1000px;
+    padding: 0;
+  }
+
+.carousel-inner{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+}
+
+
+
+@media (max-width: 1000px) {
+  iframe{
+    width: 500px;
+  }
+
+  .carousel-control-prev{
+    margin-top: 150px;
+  }
+
+  .carousel-control-next{
+    margin-top: 150px;
+  }
+
 }
 
 .textimonial {
@@ -215,4 +272,8 @@ p {
   font-family: "Ubuntu";
   font-weight: bold;
   color: #311d3f;
+}
+
+.colored-section{
+  margin: 50px 0;
 }
